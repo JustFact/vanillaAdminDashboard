@@ -7,6 +7,9 @@
 
 :root {
     --font-color: rgb(37, 16, 49);
+    --theme-color1: rgb(132, 177, 42);
+    --theme-color2: lightgreen;
+    --theme-color3: darkseagreen;
 }
 
 body {
@@ -21,7 +24,7 @@ body {
 }
 
 .sidebar {
-     background-color: rgb(132, 177, 42);
+     background-color: var(--theme-color1);
      grid-row: 1 / -1;
 }
 
@@ -41,10 +44,10 @@ body {
 }
 
 .header { 
-    background-color: lightgreen;
+    background-color: var(--theme-color2);
 
 }
 
 .main-content {
-    background-color: darkseagreen;
+    background-color: var(--theme-color3);
 }
