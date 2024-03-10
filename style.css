@@ -26,21 +26,35 @@ body {
 .sidebar {
      background-color: var(--theme-color1);
      grid-row: 1 / -1;
+
+     padding: 20px;
+
 }
 
 .sidebar .sidebar-flex {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
 .sidebar .logo {
     width: 50px;
     fill: var(--font-color);
+    margin-right: -15px;
+}
+
+.sidebar .logo-text {
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
 .sidebar .icon {
     width: 35px;
     fill: var(--font-color);
+}
+
+.sidebar [class^='link-']{
+    font-size: 20px;
 }
 
 .header { 
