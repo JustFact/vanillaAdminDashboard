@@ -1,20 +1,43 @@
 *,
 *::before,
-*::after {
+*::after,:root {
   box-sizing: border-box;
   margin: 0;
+}
+
+:root {
+    --font-color: rgb(37, 16, 49);
 }
 
 body {
     display: grid;
     grid-template-columns: 1.5fr 5fr;
     grid-template-rows: 1fr 4fr;
+    
     min-height: 100vh;
+
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--font-color);
 }
 
 .sidebar {
-     background-color: yellowgreen;
+     background-color: rgb(132, 177, 42);
      grid-row: 1 / -1;
+}
+
+.sidebar .sidebar-flex {
+    display: flex;
+    gap: 20px;
+}
+
+.sidebar .logo {
+    width: 50px;
+    fill: var(--font-color);
+}
+
+.sidebar .icon {
+    width: 35px;
+    fill: var(--font-color);
 }
 
 .header { 
