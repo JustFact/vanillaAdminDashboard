@@ -6,10 +6,10 @@
 }
 
 :root {
-    --font-color: rgb(37, 16, 49);
-    --theme-color1: rgb(132, 177, 42);
-    --theme-color2: lightgreen;
-    --theme-color3: darkseagreen;
+    --font-color: #ecfccb;
+    --theme-color1: #4d7c0f;
+    --theme-color2: #84cc16;
+    --theme-color3: #bef264;
 }
 
 body {
