@@ -139,8 +139,27 @@ body {
 
 .header .header-2 {
     display: grid;
-    grid-template-columns: 0.5fr 3fr 1fr 1fr;
+    grid-template-columns: 0.3fr 1.5fr 1fr;
     align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header-2 button {
+    border: none;
+    padding: 13px 25px;
+    margin-top: 5px;
+    border-radius: 30px ;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    background-color: var(--theme-color1);
+    color: var(--font-color-light);
+}
+
+.header .header-2 .avatar-mid {
+    justify-self: center;
 }
 
 .main-content {
