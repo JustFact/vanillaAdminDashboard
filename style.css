@@ -164,4 +164,31 @@ body {
 
 .main-content {
     background-color: var(--theme-color3);
+    color: var(--font-color-dark);
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects {
+    grid-row: 1/-1;
+}
+
+.projects .icon {
+    width: 20px;
+    fill: var(--font-color-dark);
+}
+
+.projects .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+}
+
+.announcements {
+
+}
+
+.trending {
+
 }
