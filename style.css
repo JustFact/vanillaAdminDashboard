@@ -169,6 +169,7 @@ body {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 20px;
 
     padding: 25px 15px;
 }
@@ -208,10 +209,36 @@ body {
     margin-bottom: 5px;
 }
 
-.announcements {
-
-}
-
+.announcements, 
 .trending {
-
+    display: grid;
+    grid-template-rows: min-content 1fr;
 }
+
+.announcement-container, 
+.trend-container {
+    background-color: var(--font-color-light);
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+
+.announcement-container .announcement,
+.trend-container .trend {
+    color: gray;
+    font-size: 0.8rem;
+    background-color: var(--font-color-light);
+    
+    padding: 10px 3px;
+}
+
+.announcement-container .announcement:not(:last-child),
+.trend-container .trend:not(:last-child) {
+    border-bottom: 1px solid gray;
+}
+
+.announcement-container .announcement .title,
+.trend-container .trend .entity-id {
+    color: var(--font-color-dark);
+    font-weight: 600;
+}
+
